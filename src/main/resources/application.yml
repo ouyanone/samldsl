@@ -1,0 +1,14 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-alias: spring
+    key-store: src/main/resources/saml/keystore.jks
+    key-store-password: secret
+
+security:
+  saml2:
+      metadata-url: https://clsdirect-test.oktapreview.com/app/exkl1rg62lS23J6yI0h7/sso/saml/metadata
+      #https://dev-820548.oktapreview.com/app/exkal130d3jq2ZpOe0h7/sso/saml/metadata
+      #metadata-url: https://app.onelogin.com/saml/metadata/665114
+      #metadata-url: https://app.onelogin.com/saml/metadata/664890
